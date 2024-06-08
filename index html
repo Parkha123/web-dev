@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkha's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header, nav, section, footer {
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+        form div {
+            margin-bottom: 15px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Parkha's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Parkha, a first semester Computer Science student. I have a passion for coding and love to learn new technologies.</p>
+        <img src="profile.jpg" alt="Parkha's Profile Picture" width="200">
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Project 1: <a href="https://github.com/parkha/project1">Project One</a></li>
+            <li>Project 2: <a href="https://github.com/parkha/project2">Project Two</a></li>
+            <li>Project 3: <a href="https://github.com/parkha/project3">Project Three</a></li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Institution</th>
+                    <th>Degree</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2023</td>
+                    <td>XYZ University</td>
+                    <td>Bachelor of Computer Science</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="media">
+        <h2>Media</h2>
+        <h3>Video</h3>
+        <video controls width="400">
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Parkha's Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
